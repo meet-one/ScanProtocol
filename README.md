@@ -65,6 +65,21 @@
 ```
 
 
+## 线下支付协议
+
+```javascript
+{
+  "protocol":"pay",
+  "name":"西贝莜面村",
+  "blockchain":"BOS"
+  "contract":"eosio.token",  //可选
+  "address":"accountuser",
+  "symbol":"BOS",
+  "memo":"",    //可选
+  "amount":"10"  //可选   
+}
+```
+
 ## 比较通用字段
 - 后续补充的其他公链,尽量保持一致性
 ```javascript
@@ -78,7 +93,4 @@
   amount: '' // 可选  真实转账数量
 }
 ```
-
-
-
 
