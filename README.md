@@ -35,6 +35,34 @@
 ```
 
 
+## Cosmos 转账
+
+```javascript
+{
+  protocol: 'ScanProtocol', 
+  action: 'transfer',
+  address: 'cosmos1g63q0qpc8qqrh2jxdjl7w7thf3cfvx3x48ywtm',  // 转账目标地址
+  symbol: 'ATOM',
+  decimal: 18,
+  blockchain: 'Cosmos',
+  amount: '2.4' // 可选  真实转账数量
+}
+```
+
+
+## Binance Chain 转账
+
+```javascript
+{
+  protocol: 'ScanProtocol', 
+  action: 'transfer',
+  address: 'bnb1sejtltz8cshf9yyhsqegqfe9m4hf2d6fqrrttf',  // 转账目标地址
+  symbol: 'BNB', // 代币名称 Asset Name
+  decimal: 18,
+  blockchain: 'Binance',
+  amount: '2.4' // 可选  真实转账数量
+}
+```
 
 
 ## 比较通用字段
@@ -46,7 +74,7 @@
   address: '', 
   contract: '',
   symbol: '',
-  blockchain: '',
+  blockchain: '', // BTC, ETH, EOS, Binance, BOS, MEET.ONE 
   amount: '' // 可选  真实转账数量
 }
 ```
